@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="fontawesome/css/all.min.css">
+   <link rel="stylesheet" href="styles/style.css">
+   <title>Portfolio</title>
+</head>
+
+<body>
+   <header class="d-flex flex-column">
+      <nav class="header__nav">
+         <div class="container d-flex justify-content-between align-items-center">
+            <a target="_blank" href="" class="logo">
+               <span>my</span> portfolio   <!--<img src="./images/logo.jpg" alt="">--> </a>
+            <ul class="header__menu d-flex">
+               <li><a target="_blank" href="./images/logo.jpg" class="header__link">логотип</a></li>
+               <li><a target="_blank" href="" class="header__link">работы</a></li>
+               <li><a target="_blank" href="contacts.html" class="header__link">контакты</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="header__content d-flex flex-grow-1 align-items-center">
+         <div class="container">
+            <h1>моё портфолио</h1>
+            <p>Я Абдулмухтаров МухаммадУмар, мне 15 лет. Учусь в частной школе PROWEB. <br>
+               Профессиональный веб-программист.
+               <br> В этой сфере с 14 лет. Много успешно выполненных работ.
+            </p>
+         </div>
+      </div>
+   </header>
+   <main>
+      <section class="history">
+         <div class="history__text">
+            <div class="container">
+               <div class="row flex-column align-items-center">
+                  <h2 class="history__title">история</h2>
+                  <div class="col-12 col-md-10 d-flex justify-content-between">
+                     <ul class="history__description">
+                        <li>выполненных заказов-0</li>
+                        <li>благодарных клиентов-0</li>
+                     </ul>
+                     <ul class="history__description">
+                        <li>жалоб-0</li>
+                        <li>постоянных клиентов-0</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="history__slider">
+            <div class="container">
+               <div id="history-slider" class="carousel slide" data-ride="carousel">
+                  <div class="row">
+                     <div class="col-1 d-none d-lg-block">
+                        <a class="carousel-control-prev" href="#history-slider" role="button" data-slide="prev">
+                           <span><i class="fad fa-angle-left"></i></span>
+                        </a>
+                     </div>
+                     <div class="col-12 col-lg-10">
+                        <div class="carousel-inner">
+                           <div class="carousel-item active">
+                              <div class="row">
+                                 <div class="col-12 col-md-5 d-flex align-items-center">
+                                    <img src="images/proweb.png" alt="slider image">
+                                 </div>
+                                 <div class="col-12 col-md-7">
+                                    <div class="carousel__text">
+                                       <h3 class="carousel__title"><span>обучение в</span> proweb</h3>
+                                       <p class="carousel__description">
+                                          <span> Что:</span> 9-ти месячный курс по созданию сайтов с нуля, который
+                                          включает в себя следующих дисциплин.
+                                          <br>
+                                          <span> Для кого:</span> курс рассчитан на новичков, а обучение проводится с
+                                          нуля.
+                                          <br>
+                                          <span>Что будет: </span>во время курса студенты работают как настоящие
+                                          разработчики:
+                                          создают страницы, оформляют сайт
+                                          и в конце —
+                                          подготавливают завершённые проекты к публикации в интернете. <br>
+                                          <br>
+                                          <span>Зачем:</span> научить создавать сайты, познакомиться и научиться с
+                                          инструментами веб-разработчиков. <br> <br>
+                                          <span>Цель курса:</span> дать билет в профессию.
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="carousel-item">
+                              <div class="row">
+                                 <div class="col-12 col-md-5  d-flex align-items-center">
+                                    <img src="images/proweb.png" alt="slider image">
+                                 </div>
+                                 <div class="col-12 col-md-7">
+                                    <div class="carousel__text">
+                                       <br>
+                                       <h3 class="carousel__title"><span>Требования в</span> proweb</h3>
+                                       <p class="carousel__description">
+                                          <br>
+                                          <br> • Базовые знания о компьютерной грамотности;
+                                          <br>
+                                          <br>
+                                          • Умение печатать на средней скорости или выше;
+                                          <br>
+                                          <br>
+                                          • Владение русским языком на хорошем уровне;
+                                          <br>
+                                          <br>
+                                          • Неподдельное желание учиться.
+                                          <br>
+                                          <br>
+                                          • Минимальный возраст для обучения — 14 лет.
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-1 d-none d-lg-block">
+                        <a class="carousel-control-next" href="#history-slider" role="button" data-slide="next">
+                           <span><i class="fad fa-angle-right"></i></span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="works">
+         <div class="works__head">
+            <div class="container">
+               <div class="row flex-column align-items-center">
+                  <h2 class="works__title">работы</h2>
+                  <div class="col-12 col-md-10">
+                     <p class="works__description">
+                        Мои работы сделанные ручными. Со всеми моими выполненными работами можно ознакомится ниже
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="works__buttons">
+            <div class="container">
+               <div class="row justify-content-center">
+                  <div class="col-12 col-md-10 col-lg-7">
+                     <ul class="nav nav-pills justify-content-around" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                           <a class="nav-link active" id="pills-nike-tab" data-toggle="pill" href="#pills-nike"
+                              role="tab" aria-controls="pills-nike" aria-selected="true">nike</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" id="pills-silver-tab" data-toggle="pill" href="#pills-silver" role="tab"
+                              aria-controls="pills-silver" aria-selected="false">silver house</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" id="pills-orange-tab" data-toggle="pill" href="#pills-orange" role="tab"
+                              aria-controls="pills-orange" aria-selected="false">orange marketing</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" id="pills-toshkent-tab" data-toggle="pill" href="#pills-toshkent"
+                              role="tab" aria-controls="pills-toshkent" aria-selected="false">toshkent</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" id="pills-street-tab" data-toggle="pill" href="#pills-street" role="tab"
+                              aria-controls="pills-street" aria-selected="false">street88</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" id="pills-pizza-tab" data-toggle="pill" href="#pills-pizza" role="tab"
+                              aria-controls="pills-pizza" aria-selected="false">pizzeria</a>
+                        </li>
+                        <li class="nav-item">
+                           <a target="_blank" class="nav-link" id="pills-travel-tab" data-toggle="pill"
+                              href="#pills-travel" role="tab" aria-controls="pills-travel"
+                              aria-selected="false">tashkent travels</a>
+                        </li>
+                        <li class="nav-item">
+                           <a target="_blank" class="nav-link" id="pills-about-tab" data-toggle="pill"
+                              href="#pills-about" role="tab" aria-controls="pills-about" aria-selected="false">about</a>
+                        </li>
+                        <li class="nav-item">
+                           <a target="_blank" class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                              href="#pills-contact" role="tab" aria-controls="pills-contact"
+                              aria-selected="false">contact</a>
+                        </li>
+                        <li class="nav-item">
+                           <a target="_blank" class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                              role="tab" aria-controls="pills-home" aria-selected="false">home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a target="_blank" class="nav-link" id="pills-project-tab" data-toggle="pill"
+                              href="#pills-project" role="tab" aria-controls="pills-project"
+                              aria-selected="false">project single</a>
+                        </li>
+                        <li class="nav-item">
+                           <a target="_blank" class="nav-link" id="pills-index-tab" data-toggle="pill"
+                              href="#pills-index" role="tab" aria-controls="pills-index" aria-selected="false">index</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="works__content">
+            <div class="container-fluid">
+               <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-nike" role="tabpanel"
+                     aria-labelledby="pills-nike-tab">
+                     <div class="row">
+                        <div class="col-12 col-lg-6">
+                           <img src="images/nike.png" alt="tab content image">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                           <div class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                              <div class="tab__top">
+                                 <h3>макет <span>nike</span></h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste</p>
+                              </div>
+                              <a target="_blank" href="https://bekhruzbek.github.io/Nike/">подробнее</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-silver" role="tabpanel" aria-labelledby="pills-silver-tab">
+                     <div class="row">
+                        <div class="col-12 col-lg-6">
+                           <img src="images/silver-house.jpg" alt="tab content image">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                           <div class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                              <div class="tab__top">
+                                 <h3>макет <span>silver house</span></h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste</p>
+                              </div>
+                              <a target="_blank" href="https://bekhruzbek.github.io/Silver-House/">подробнее</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-orange" role="tabpanel" aria-labelledby="pills-orange-tab">
+                     <div class="row">
+                        <div class="col-12 col-lg-6">
+                           <img src="images/orange-market.jpg" alt="tab content image">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                           <div class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                              <div class="tab__top">
+                                 <h3>макет <span>orange marketing</span></h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste</p>
+                              </div>
+                              <a target="_blank" href="https://bekhruzbek.github.io/Orange-Marketing/">подробнее</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-toshkent" role="tabpanel" aria-labelledby="pills-toshkent-tab">
+                     <div class="row">
+                        <div class="col-12 col-lg-6">
+                           <img src="images/toshkent.jpg" alt="tab content image">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                           <div class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                              <div class="tab__top">
+                                 <h3>макет <span>toshkent</span></h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste</p>
+                              </div>
+                              <a target="_blank" href="https://bekhruzbek.github.io/Toshkent/">подробнее</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-street" role="tabpanel" aria-labelledby="pills-street-tab">
+                     <div class="row">
+                        <div class="col-12 col-lg-6">
+                           <img src="images/burger.jpg" alt="tab content image">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                           <div class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                              <div class="tab__top">
+                                 <h3>макет <span>street88</span></h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste</p>
+                              </div>
+                              <a target="_blank" href="https://bekhruzbek.github.io/street88/">подробнее</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-pizza" role="tabpanel" aria-labelledby="pills-pizza-tab">
+                     <div class="row">
+                        <div class="col-12 col-lg-6">
+                           <img src="images/pizza.jpg" alt="tab content image">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                           <div class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                              <div class="tab__top">
+                                 <h3>макет <span>pizzeria</span></h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste</p>
+                              </div>
+                              <a target="_blank" href=" https://bekhruzbek.github.io/Pizzeria/">подробнее</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-travel" role="tabpanel" aria-labelledby="pills-travel-tab">
+                     <div class="row">
+                        <div class="col-12 col-lg-6">
+                           <img src="./images/tashkent travels.jpg" alt="tab content image">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                           <div class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                              <div class="tab__top">
+                                 <h3>макет <span>tashkent travels</span></h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste</p>
+                              </div>
+                              <a target="_blank" href="https://bekhruzbek.github.io/TashkentTravels/">подробнее</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
+                     <div class="row">
+                        <div class="col-12 col-lg-6">
+                           <img src="./images/about.jpg" alt="tab content image">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                           <div class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                              <div class="tab__top">
+                                 <h3>макет <span>about</span></h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste</p>
+                              </div>
+                              <a target="_blank" href="https://bekhruzbek.github.io/about/">подробнее</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                     <div class="row">
+                        <div class="col-12 col-lg-6">
+                           <img src="./images/contact.jpg" alt="tab content image">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                           <div class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                              <div class="tab__top">
+                                 <h3>макет <span>contact</span></h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste</p>
+                              </div>
+                              <a target="_blank" href="https://bekhruzbek.github.io/Contact/">подробнее</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                     <div class="row">
+                        <div class="col-12 col-lg-6">
+                           <img src="./images/home.jpg" alt="tab content image">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                           <div class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                              <div class="tab__top">
+                                 <h3>макет <span>home</span></h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste</p>
+                              </div>
+                              <a target="_blank" href="https://bekhruzbek.github.io/home/">подробнее</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-project" role="tabpanel" aria-labelledby="pills-project-tab">
+                     <div class="row">
+                        <div class="col-12 col-lg-6">
+                           <img src="./images/project.jpg" alt="tab content image">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                           <div class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                              <div class="tab__top">
+                                 <h3>макет <span>project single</span></h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste</p>
+                              </div>
+                              <a target="_blank" href="https://bekhruzbek.github.io/Project-single/">подробнее</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-index" role="tabpanel" aria-labelledby="pills-index-tab">
+                     <div class="row">
+                        <div class="col-12 col-lg-6">
+                           <img src="./images/index.jpg" alt="tab content image">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                           <div class="tab__text h-100 d-flex flex-column justify-content-between align-items-start">
+                              <div class="tab__top">
+                                 <h3>макет <span>index</span></h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste</p>
+                              </div>
+                              <a target="_blank" href="https://bekhruzbek.github.io/index/">подробнее</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="capabilities">
+         <div class="container">
+            <div class="row flex-column align-items-center">
+               <h2 class="capabilities__tittle">возможности</h2>
+               <div class="col-12 col-md-10 col-lg-8">
+                  <div class="accordion" id="accordion">
+                     <div class="card">
+                        <div class="card-header p-0" id="headingOne">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link w-100 text-align-left d-flex align-items-center" type="button"
+                                 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                 aria-controls="collapseOne">
+                                 <i class="fab fa-html5"></i> html5
+                              </button>
+                           </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                           data-parent="#accordion">
+                           <div class="card-body">
+                              HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») —
+                              стандартизированный язык разметки документов во Всемирной паутине. Большинство веб-страниц
+                              содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется
+                              браузерами; полученный в результате интерпретации форматированный текст отображается на
+                              экране монитора компьютера или мобильного устройства.
+                              Язык HTML до 5-й версии определялся как приложение SGML (стандартного обобщённого языка
+                              разметки по стандарту ISO 8879). Спецификации HTML5 формулируются в терминах DOM
+                              (объектной модели документа).
+                              Язык XHTML является более строгим вариантом HTML, он следует синтаксису XML и является
+                              приложением языка XML в области разметки гипертекста.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-header p-0" id="headingTwo">
+                           <h5 class="mb-0">
+                              <button
+                                 class="btn btn-link w-100 text-align-left text-align-left collapsed d-flex align-items-center"
+                                 type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                 aria-controls="collapseTwo">
+                                 <i class="fab fa-css3-alt"></i> css3
+                              </button>
+                           </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                           <div class="card-body">
+                              CSS (/siːɛsɛs/ англ. Cascading Style Sheets — каскадные таблицы стилей) — формальный язык
+                              описания внешнего вида документа, написанного с использованием языка разметки.
+                              Преимущественно используется как средство описания, оформления внешнего вида веб-страниц,
+                              написанных с помощью языков разметки HTML и XHTML, но может также применяться к любым
+                              XML-документам, например, к SVG или XUL.
+                              CSS используется создателями веб-страниц для задания цветов, шрифтов, стилей, расположения
+                              отдельных блоков и других аспектов представления внешнего вида этих веб-страниц. Основной
+                              целью разработки CSS являлось отделение описания логической структуры веб-страницы
+                              (которое производится с помощью HTML или других языков разметки) от описания внешнего вида
+                              этой веб-страницы (которое теперь производится с помощью формального языка CSS).
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-header p-0" id="headingThree">
+                           <h5 class="mb-0">
+                              <button
+                                 class="btn btn-link w-100 text-align-left text-align-left collapsed d-flex align-items-center"
+                                 type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                 aria-controls="collapseThree">
+                                 <i class="fab fa-bootstrap"></i> bootstrap4
+                              </button>
+                           </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                           data-parent="#accordion">
+                           <div class="card-body">
+                              Bootstrap (также известен как Twitter Bootstrap[3][4][5]) — свободный набор инструментов
+                              для создания сайтов и веб-приложений. Включает в себя HTML- и CSS-шаблоны оформления для
+                              типографики, веб-форм, кнопок, меток, блоков навигации и прочих компонентов
+                              веб-интерфейса, включая JavaScript-расширения.
+
+                              Bootstrap использует современные наработки в области CSS и HTML, поэтому необходимо быть
+                              внимательным при поддержке старых браузеров.Эта библиотека начала разрабатываться как
+                              внутренняя библиотека компании Twitter под названием Twitter Blueprint. После нескольких
+                              месяцев разработки он был открыт под названием Bootstrap 19 августа 2011 года[7].
+
+                              Основными нововведениями второй версии, появившейся 31 января 2012 года, стали
+                              12-колоночная сетка и поддержка адаптивности.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-header p-0" id="headingFour">
+                           <h5 class="mb-0">
+                              <button
+                                 class="btn btn-link w-100 text-align-left text-align-left collapsed d-flex align-items-center"
+                                 type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                 aria-controls="collapseFour">
+                                 <i class="fab fa-js-square"></i> javascript
+                              </button>
+                           </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                           <div class="card-body">
+                              JavaScript (/ˈdʒɑːvɑːˌskrɪpt/; аббр. JS /ˈdʒeɪ.ɛs./) — мультипарадигменный язык
+                              программирования. Поддерживает объектно-ориентированный, императивный и функциональный
+                              стили. Является реализацией языка ECMAScript (стандарт ECMA-262[6]).
+
+                              JavaScript обычно используется как встраиваемый язык для программного доступа к объектам
+                              приложений. Наиболее широкое применение находит в браузерах как язык сценариев для
+                              придания интерактивности веб-страницам[7].
+
+                              Основные архитектурные черты: динамическая типизация, слабая типизация, автоматическое
+
+                              На JavaScript оказали влияние многие языки, при разработке была цель сделать язык похожим
+                              на Java, но при этом лёгким для использования непрограммистами. Языком JavaScript не
+                              владеет какая-либо компания или организация, что отличает его от ряда языков
+                              программирования, используемых в веб-разработке
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer>
+      <div class="container d-flex flex-column align-items-center">
+         <a target="_blank" href="" class="logo"><span>my</span> works</a>
+         <ul class="header__menu d-flex">
+            <li><a target="_blank" href="./images/logo.jpg" class="header__link">логотип</a></li>
+            <li><a target="_blank" href="" class="header__link">работы</a></li>
+            <li><a target="_blank" href="contacts.html" class="header__link">контакты</a></li>
+         </ul>
+         <p>Если нужны интерактивные сайты обращайтесь ниже контактам:</p>
+         <div class="footer-contacts">
+            <a target="_blank" href="#!">+99890919****</a>]
+            <a target="_blank" href="#!">email:abdulmukxtarovm@gmail.com</a>
+         </div>
+      </div>
+   </footer>
+
+   <script src="bootstrap/js/jquery.js"></script>
+   <script src="bootstrap/js/popper.js"></script>
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
