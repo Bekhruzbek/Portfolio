@@ -6,7 +6,20 @@
    list-style: none;
    text-decoration: none;
 }
-
+:root{
+   --col-1: calc(100%/12);
+   --col-2: calc(100%/12*2);
+   --col-3: calc(100%/12*3);
+   --col-4: calc(100%/12*4);
+   --col-5: calc(100%/12*5);
+   --col-6: calc(100%/12*6);
+   --col-7: calc(100%/12*7);
+   --col-8: calc(100%/12*8);
+   --col-9: calc(100%/12*9);
+   --col-10: calc(100%/12*10);
+   --col-11: calc(100%/12*11);
+   --col-12: calc(100%/12*12);
+}
 .text-align-left {
    text-align: left;
 }
@@ -29,7 +42,7 @@ header {
 .header__nav {
    background: #1f2020;
    padding: 30px 0;
-   height: 90px;
+   /* height: 90px;x x   */
 }
 
 .logo {
@@ -95,7 +108,7 @@ header {
 }
 
 .header__link:hover {
-   background: #ffcb02;
+   background: #616161;
    color: black;
    padding: 35px 27px;
    margin: 0;
@@ -126,6 +139,293 @@ ul {
 
 /* ======================================================= HEADER end ============================================= */
 /* ======================================================= MAIN start ============================================= */
+
+.tabsPanel {
+   width: 400px;
+   height: 600px;
+   box-shadow: 0 0 20px 0 rgba(0,0,0,0.8);
+   display: flex;
+   flex-direction: column;
+   margin: 20px 0;
+   background: #22272d;
+}
+.tabsLinks {
+   display: flex;
+   background: #191d22;
+}
+.tabsItem {
+   flex-grow: 1;
+   display: flex;
+}
+.tabsLink:hover{
+   color: #d2a90b;
+   
+}
+.tabsLink {
+   padding: 15px;
+   flex-grow: 1;
+   display: flex;
+   justify-content: center;
+   color: #fff;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   border-bottom: 3px solid #2c2f38;
+   position: relative;
+}
+.tabsItem.active .tabsLink {
+   border-bottom-color: #fff;
+}
+.tabsContent {
+   flex-grow: 1;
+   position: relative;
+}
+.clock, .stopwatch {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 20px 0;
+}
+.tabsContentItem {
+   z-index: 0;
+   opacity: 0;
+   transition: 0.5s;
+   position: absolute;
+   top: 0;
+}
+.tabsContentItem.active {
+   z-index: 1;
+   opacity: 1;
+}
+.tabsLink__span {
+   display: none;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: #fff;
+   right: 10px;
+   position: absolute;
+   transition: 0.5s;
+}
+.tabsLink__span.active {
+   display: block;
+}
+.tabsLink__span.active_clear {
+   display: block;
+   background: red;
+}
+.arrowClock {
+   --position: 15px;
+   width: 250px;
+   height: 250px;
+   background: #434a53;
+   border-radius: 50%;
+   margin-bottom: 90px;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.stopwatch__btn:focus{
+   outline: none;
+}
+.h {
+   width: 2px;
+   height: 100%;
+   position: absolute;
+}
+.h::before {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 35%;
+   background: #0b0c0e;
+   top: calc(55% - 35% + 6px);
+}
+.m {
+   width: 2px;
+   height: 100%;
+   position: absolute;
+}
+.m::before {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 45%;
+   background: #22272d;
+   top: calc(10% + 6px);
+}
+.s {
+   width: 2px;
+   height: 100%;
+   position: absolute;
+}
+.s::before {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 65%;
+   background: #fff;
+   top: 6px;
+}
+.arrowClockNumber {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+}
+.arrowClockNumber__num {
+   color: #fff;
+   font-size: 22px;
+   position: absolute;
+}
+.arrowClockNumber__num_12 {
+   top: var(--position);
+}
+.arrowClockNumber__arr {
+   position: absolute;
+   width: 3px;
+   height: 100%;
+}
+.arrowClockNumber__arr::before {
+   content: '';
+   display: block;
+   height: 20px;
+   background: #fff;
+   width: 100%;
+   margin-top: 8px;
+}
+.arrowClockNumber__arr_1 {
+   transform: rotate(30deg);
+}
+.arrowClockNumber__arr_2 {
+   transform: rotate(60deg);
+}
+.arrowClockNumber__arr_4 {
+   transform: rotate(120deg);
+}
+.arrowClockNumber__arr_5 {
+   transform: rotate(150deg);
+}
+.arrowClockNumber__arr_7 {
+   transform: rotate(210deg);
+}
+.arrowClockNumber__arr_8 {
+   transform: rotate(240deg);
+}
+.arrowClockNumber__arr_10 {
+   transform: rotate(300deg);
+}
+.arrowClockNumber__arr_11 {
+   transform: rotate(330deg);
+}
+.arrowClockNumber__num_3 {
+   right: calc(var(--position) + 3px);
+}
+.arrowClockNumber__num_6 {
+   bottom: var(--position);
+}
+.arrowClockNumber__num_9 {
+   left: calc(var(--position) + 3px);
+}
+/* .s{
+   transform: rotate(200deg);
+} */
+.numberClock {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.numberClock::before, .numberClock::after {
+   content: '';
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: #fff;
+   display: block;
+   position: absolute;
+   animation: opacity 1s infinite;
+   /* animation: clock 1s infinite; */
+}
+.numberClock::before {
+   top: 13px
+}
+.numberClock::after {
+   bottom: 13px;
+}
+.hours, .minutes, .stopwatch__hours, .stopwatch__minutes, .stopwatch__seconds {
+   padding: 10px 15px;
+   background: #434a53;
+   color: #fff;
+   font-size: 25px;
+   margin: 0 10px;
+   border-radius: 6px;
+}
+.stopwatch__hours, .stopwatch__minutes, .stopwatch__seconds {
+   width: 58px;
+   text-align: center;
+   margin: 0 0 10px;
+}
+.stopwatch__clock-description {
+   padding: 5px 5px 10px;  
+   text-align: center;
+   color: #fff;
+   background: #191d22;
+   border-radius: 6px;
+   text-transform: uppercase;
+   margin: 0 5px;
+}
+.stopwatch__clock {
+   display: flex;
+   margin-bottom: 50px;
+}
+.stopwatch__btn {
+   padding: 10px 15px;
+   background: #fff;
+   border-radius: 30px;
+   border: none;
+   font-size: 18px;
+   text-transform: uppercase;
+   color: #191d22;
+   cursor: pointer;
+   outline: none;
+}
+
+/* Добавляем keyframe на уроке*/
+
+@keyframes opacity {
+   0% {
+       opacity: 1;
+   }
+   50% {
+       opacity: 0;
+   }
+   100% {
+       opacity: 1;
+   }
+}
+/* @keyframes clock {
+   0%{
+       transform: scale(1);
+   }
+   50%{
+       transform: scale(0.7);
+   }
+   100%{
+       transform: scale(1);
+   }
+} */
+
+
+
+
+
+
 .history__text {
    padding: 60px 0;
    background: #282929;
@@ -576,3 +876,50 @@ header {
 }
 
 /* ++++++++++++++++++++++++++++++++  WORKS end  +++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+
+
+
+
+
+@media(max-width:576px){
+   .header__nav .container{
+      flex-wrap: wrap;
+   }
+   header .logo{
+      margin: 0 auto 15px;
+   }
+   .header__content h1{
+      color: white;
+      font-size: 45px;
+      font-family: 'CS Regular';
+      text-transform: uppercase;
+      margin-bottom: 18px;
+   }
+   .header__content p{
+      line-height: 26px;
+    color: white;
+    font-size: 21px;
+    font-family: 'CS Regular';
+   }
+   .history__text {
+      padding: 50px 0;
+      background: #282929;
+   }
+   .works__head {
+    padding: 40px 0;
+   }
+   .capabilities {
+      background: #282929;
+      padding: 50px 0 20px;
+  }
+  ul {
+   margin: 0 auto;
+  }
+  .tab__text a {
+   font-size: 14px;
+}
+}
